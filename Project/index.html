@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Hangman</title>
+    <link rel="shortcut icon" 
+          href="run.png" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Gloria+Hallelujah&family=Nanum+Gothic:wght@400;700&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <h1>Movie Hangman</h1>
+      <div id="gallows">
+        <img class="mouse" src="mouse.gif">
+        <img style="padding-left: 110px" id="hangmanImage" src="img/hangman-0.png">
+      </div>
+      <div id="word"></div>
+      <br>
+      <div id="controls">
+        <input type="text" id="guessBox">
+        <button id="guessWordButton" class="button" onclick="guessWord( game )">Guess Word</button>
+        <button id="newGameButton" class="button" onclick="newGame();">New Game</button>
+        <br>
+        <br>
+      
+      </div>
+      <br>
+      <div id="guesses"></div>
+    </main>   
+    <script src="hangman.js"></script>
+  </body>
+</html>
