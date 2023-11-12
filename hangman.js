@@ -110,7 +110,6 @@ function Game()
 		incorrectGuesses++;
 		lost = incorrectGuesses >= maxGuesses;
 		
-
 		if( lost )
 		{
 			guessAllLetters();
@@ -210,7 +209,8 @@ function render( game )
 		document.getElementById("guesses").innerHTML += innerHtml;
 	});
     // document.getElementById("hangmnanImage").src = 'img/hangman-${game.IncorrectGuesses}.svg';
-	// document.getElementById("hangmanImage").src = "img/hangman-6" + game.getIncorrectGuesses() + ".png";
+	// document.getElementById("hangmanImage").src = "img/hangman-6" + game.getIncorrectGuesses() + ".png"
+	document.getElementById("hangmanImage").src = "img/hangman" + game.getIncorrectGuesses() + ".png";
 
 	let guessBox = document.getElementById('guessBox');
 	if( game.isWon() )
